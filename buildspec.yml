@@ -1,0 +1,24 @@
+
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Starting application build"
+
+  build:
+    commands:
+      - echo "Checking application files"
+      - test -f index.html
+      - test -f style.css
+      - test -f appspec.yml
+      - test -f scripts/install_dependencies.sh
+      - test -f scripts/start_server.sh
+      - echo "Build completed successfully"
+
+artifacts:
+  files:
+    - index.html
+    - style.css
+    - appspec.yml
+    - scripts/**/*
