@@ -1,2 +1,2 @@
 # AWS-CICD-Demo
-LAB EXP 9
+Student Information Portal deployed using AWS CI/CD Pipeline.
